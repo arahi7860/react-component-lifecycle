@@ -2,23 +2,23 @@
 
 # The Component Life Cycle
 
-So far, we've used react components to build simple applications. We've added
-state and props and controlled data flow through them (using just the `render`
-and `setState` methods). In order to do more complex things, we'll have to use
-life cycle methods.
+So far, we've used React components to build simple applications. We've added
+state and props and controlled data flow through them using just the `render`
+and `setState` methods. In order to do more complex things, we'll have to use
+lifecycle methods.
 
 ## Prerequisites
 
 - React
 - Components
-- State and props
+- State and Props
 
 ## Objectives
 
 By the end of this, developers should be able to:
 
-- Explain how to use React's life cycle methods
-- Use asynchronous functions within react
+- Explain how to use React's lifecycle methods
+- Use asynchronous functions within React
 - Retrieve data from an API inside of a component
 
 ## Introduction (5 min / 0:10)
@@ -28,14 +28,14 @@ data, but our component would likely render before the AJAX request finished.
 Our component would see that our data is `undefined` and either render a
 blank/empty component or throw an error.
 
-How do we incorporate third party libraries like `fetch` or `axios` with React?
+How do we incorporate third party libraries like `fetch` with React?
 It sounds complicated... Do we put that in render?
 
-This lesson will introduce the Component Life Cycle: hooks that are fired at
-different states of a components "life" for solving the problems described
+This lesson will introduce the Component Lifecycle: hooks that are fired at
+different stages of a component's "life" for solving the problems described
 above, as well as many others.
 
-So, what is the Component Life Cycle?
+So, what is the Component Lifecycle?
 
 ## The Component Life Cycle
 
@@ -46,6 +46,9 @@ that we can use to add functionality to our components. These methods are
 invoked at specific periods during the "life" of a component, like when it
 mounts to the DOM or unmounts from the DOM. While there are a lot of lifecycle
 methods, there are only a few that you will use regularly.
+
+The **bold** methods are the most commonly used ones and the ones we'll focus
+on for this lesson
 
 There are three types of component lifecycle methods:
 
@@ -68,17 +71,14 @@ There are three types of component lifecycle methods:
 
 - **`componentWillUnmount()`**
 
-> the **bold** methods are the most commonly used ones and the ones we'll focus
-> on for this lesson
+> Review the documentation on
+> [The Component Life Cycle](https://reactjs.org/docs/react-component.html#the-component-lifecycle).
 
-Review the documentation on
-[The Component Life Cycle](https://reactjs.org/docs/react-component.html#the-component-lifecycle).
+> Review
+> [this handy cheat sheet](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
+> for a visual explanation of these life cycle methods and when they get invoked.
 
-Review
-[this handy cheat sheet](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
-for a visual explanation of these life cycle methods and when they get invoked.
-
-## I Do: Exploring the Life Cycle Methods (10 min / 0:30)
+## I Do: Exploring the Lifecycle Methods (10 min / 0:30)
 
 Clone down
 [this repository](https://git.generalassemb.ly/dc-wdi-react-redux/component-lifecycle-exercise)
@@ -86,7 +86,7 @@ with a short exercise for exploring the life cycle methods.
 
 This exercise is a simple, 2 "page" website where each page is a component.
 We'll be adding the component life cycle methods to each page-component. As we
-do consider the following questions:
+do, consider the following questions:
 
 - What order are the methods run in? Before or after rendering?
 - How many times is the method invoked?
@@ -97,9 +97,8 @@ do consider the following questions:
 
 ## Requesting Data from an API (30 min / 1:00)
 
-Now that we've reviewed the component life cycle methods, let's dive in to what
-we use them for. There are two common use cases for the life cycle methods, but
-the most common is requesting data from an API.
+Now that we've reviewed the component lifecycle methods, let's dive in to what
+we use them for. The most common is requesting data from an API.
 
 ### We Do: [Country List](https://git.generalassemb.ly/dc-wdi-react-redux/react-country-list)
 
