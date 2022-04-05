@@ -81,7 +81,7 @@ There are three types of component lifecycle methods:
 ## I Do: Exploring the Lifecycle Methods (10 min / 0:30)
 
 Clone down
-[this repository](https://git.generalassemb.ly/dc-wdi-react-redux/component-lifecycle-exercise)
+[this repository](https://git.generalassemb.ly/sei-cosmic-binturongs/component-lifecycle-exercise)
 with a short exercise for exploring the life cycle methods.
 
 This exercise is a simple, 2 "page" website where each page is a component.
@@ -100,10 +100,10 @@ do, consider the following questions:
 Now that we've reviewed the component lifecycle methods, let's dive in to what
 we use them for. The most common is requesting data from an API.
 
-### We Do: [Country List](https://git.generalassemb.ly/dc-wdi-react-redux/react-country-list)
+### We Do: [Country List](https://git.generalassemb.ly/sei-cosmic-binturongs/react-country-list)
 
 Clone down
-[this repository](https://git.generalassemb.ly/dc-wdi-react-redux/react-country-list)
+[this repository](https://git.generalassemb.ly/sei-cosmic-binturongs/react-country-list)
 which has some exercises on how to make AJAX requests using `fetch()` inside of
 a component.
 
