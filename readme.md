@@ -103,7 +103,7 @@ we use them for. The most common is requesting data from an API.
 ### We Do: [Country List](https://git.generalassemb.ly/sei-buffleheads/react-country-list)
 
 Clone down
-[this repository](https://git.generalassemb.ly/sei-cosmic-binturongs/react-country-list)
+[this repository](https://git.generalassemb.ly/sei-buffleheads/react-country-list)
 which has some exercises on how to make AJAX requests using `fetch()` inside of
 a component.
 
